@@ -3,7 +3,7 @@
 ## COMPILER
 Compiler là phần mềm chuyển những ngôn ngữ bậc cao dựa theo các quy tắc của ngôn ngữ đó thành ngôn ngữ máy , ví dụ ở ngôn ngữ C là quá trình biên dịch một file main.c thành file main.exe thông qua 4 quá trình:
 
-     ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/4a70180c-5cd3-409d-bf74-87f811f8a6ee)
+    ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/c1b0c15c-3a37-4bd6-adfa-588693e26e22)
 
    - Quá trình tiền xử lý (pre-processor): là quá trình xảy ra khi dùng include gộp các file vào một file duy nhất , bắt đầu là một file main.c/.cpp/.h (source code) bao gồm các hàm và các thư viện qua quá trình tiền xử lý các file main.c trở thành main.i khi gộp các file lại với nhau.
 
