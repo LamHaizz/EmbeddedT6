@@ -29,7 +29,33 @@ Ví dụ khi ta khai báo 1 biến int a = 10; thì máy tính sẽ lưu giá tr
 
    ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/5430f3ae-8a2b-47ad-94ba-36e587021f51)
 
-Khi khai báo 1 con trỏ trong C cần phải theo quy ước ví dụ: int* ptr = 0x01 ; ptr là tên của con trỏ cũng là một biến như a ở trên nhưng biến a dùng để lưu giá trị còn biến con trỏ ptr dùng để lưu địa chỉ của giá trị được trỏ vào ngoài ra con trỏ cũng có thể lưu địa chỉ của hàm , mảng
+Khi khai báo 1 con trỏ trong C cần phải theo quy ước ví dụ: int* ptr = 0x01 ; ptr là tên của con trỏ cũng là một biến như a ở trên nhưng biến a dùng để lưu giá trị còn biến con trỏ ptr dùng để lưu địa chỉ của giá trị được trỏ vào ngoài ra con trỏ cũng có thể lưu địa chỉ của hàm , mảng.
+Bên cạnh đó nếu muốn gán một địa chỉ của một biến có sẵn ta dùng như sau: int* ptr = &a; (quy tắc của C khi dùng ký hiệu &<đối tượng> dùng để tìm địa chỉ của đối tượng đó).
+Có thể thấy giá trị của biến ptr(biến con trỏ) và &a(địa chỉ của a) là như nhau do ta gán địa chỉ của a cho biến ptr (ptr = &a)
+Để lấy giá trị của một địa chỉ từ con trỏ: 
+
+   ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/b5414a02-640b-49dc-8541-f9f625b4429b)
+   
+Con trỏ được khai báo kiểu dữ liệu nào thì chỉ lưu được địa chỉ chứa giá trị kiểu đó. Vì vậy có một con trỏ đặc biệt là con trỏ void, nó có thể trỏ đến địa chỉ của tất cả các đối tượng
+
+![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/660ebbb9-ae9c-49a6-ba41-50cc97ff0058)
+
+![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/f0d71392-8183-44b1-9f94-efc54e3cf4ae)
+
+Để con trỏ void đọc được giá trị tại địa chỉ ta phải ép kiểu cho nó như sau: (<kiểu dữ liệu>*) ptr 
+
+![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/a173ccb7-582d-40d9-a27c-dfb0021cd0c8)
+
+![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/89a24016-51da-495b-853a-a258bd516a43)
+
+LƯU Ý : khi khai báo một con trỏ mà không gán địa chỉ cho nó thì lúc đó nó sẽ trỏ đến một địa chỉ rác , địa chỉ rác có thể là địa chỉ của một đối tượng trong chương trình dẫn đến chương trình có thể bị lỗi. Nên quy tắc khi khai báo con trỏ là phải gán cho nó một địa chỉ bằng một địa chỉ của biến, nếu chưa sử dụng bắt buộc phải gán cho nó bằng con trỏ NULL (là con trỏ có địa chỉ bằng 0 và giá trị bằng 0) hoặc khi một con trỏ không cần sử dụng nữa cũng phải gán bằng con trỏ NULL: int* ptr = NULL;
+
+#### CON TRỎ HÀM
+
+Là con trỏ lưu địa chỉ của hàm, nó có thể trỏ đến địa chỉ các hàm có cùng cấu trúc.
+Cách khai báo một con trỏ hàm: void(*<tên hàm>)(<input parameter>); ví dụ: void(*ptr)(int,int)
+
+![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/355bf684-6097-4794-bb64-71dc956d1497)
 
 
 #### POINTER IN POINTER
