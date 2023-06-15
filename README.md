@@ -69,7 +69,10 @@ Ngoài ra thông qua con trỏ hàm có thể truyền một hàm làm input par
 
 ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/6abb9596-9614-4a48-9745-db19400fd4c4)
 
-Khi ta khai báo một con trỏ void gán với một địa chỉ hàm không xác định kiểu dữ liệu gì thì ta có thể ép kiểu cho nó về kiểu con trỏ hàm như sau :
+     toanhoc(&tong, 4, 7);
+     toanhoc(&hieu, 24,7);
+
+Hoặc khi ta khai báo một con trỏ void gán với một địa chỉ hàm không xác định kiểu dữ liệu gì thì ta có thể ép kiểu cho nó về kiểu con trỏ hàm như sau :
 
       void *ptr = &tong; // hàm tổng cũng trả về giá trị void như  hình trên 
       ((void(*)(int,int))ptr)(8,9); // void(*)(int,int): đây là kiểu con trỏ mà ta muốn ép kiểu thành
