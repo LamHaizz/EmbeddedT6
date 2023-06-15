@@ -88,5 +88,11 @@ ví dụ :
     
 ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/7c0c3a27-16ba-43b8-8fab-d6412e76e607)
 
-
+    int main (int argc, char const argv[]){
+    double d = 10.3;
+    char string[] = "Hello";
+    int* array[] = {&toanhoc, &d, string};
+    printf("gia tri: %f\n", *
+    
+ 
 
