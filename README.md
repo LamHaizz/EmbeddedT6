@@ -95,7 +95,7 @@ ví dụ :
     double d = 10.3;
     char string[] = "Hello";
     int* array[] = {&toanhoc, &d, string};
-    printf("gia tri: %f\n", *
+    printf("gia tri: %f\n", *(double*)array[1]);
     
  
 
