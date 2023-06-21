@@ -100,7 +100,7 @@ ví dụ :
 
   ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/0f1c1e22-f3bc-4215-8cea-6c9c1676ccb5)
 
- ####Text :
+#### Text :
  
    – Quyền truy cập chỉ Read và nó chưa lệnh để thực thi nên tránh sửa đổi instruction.
    
@@ -120,7 +120,7 @@ ví dụ :
          }
          
    
-####Data:
+#### Data:
 
    – Quyền truy cập là read-write.
    
@@ -138,7 +138,7 @@ ví dụ :
             int x; // biến cục bộ
          }
    
-####Bss:
+#### Bss:
 
    – Quyền truy cập là read-write.
    
@@ -154,7 +154,7 @@ ví dụ :
    LƯU Ý: Khi ta gán lại một giá trị cho i khi sử dụng trong hàm thì biến i vẫn được lưu ở phân vùng BSS chứ không phải sẽ chuyển sang phân vùng data , việc phân vùng nhớ chỉ căn cứ vào lúc khởi tạo đầu tiên.
  
     
- ####Stack:
+ #### Stack:
  
    – Quyền truy cập là read-write.
    
@@ -174,7 +174,7 @@ ví dụ :
 
 LƯU Ý : Khi viết chương trình chỉ muốn đọc giá trị biến truyền vào thì input parameter chỉ cần khai báo biến bình thường , còn nếu muốn thay đổi giá trị của biến truyền vào thì input parameter phải truyền con trỏ.
          
-####Heap:
+#### Heap:
 
    – Quyền truy cập là read-write.
    
