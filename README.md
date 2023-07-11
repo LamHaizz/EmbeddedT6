@@ -253,3 +253,14 @@ Khi viết chương trình bao gồm nhiều chương trình nhỏ , trong quá 
 
       volatile int data = readADC();// Báo cho compiler không được optimize biến này
 
+
+
+## LINKED LIST
+
+Linked list là tập hợp những node đơn lẻ dùng kỹ thuật node* next để đọc các node tiếp theo để liên kết các node lại với nhau gọi là mảng nhân tạo. Được tạo ra để khắc phục những nhược điểm của một mảng bình thường ở linked list chúng ta có thể dễ dàng thao tác các tác vụ như sữa đổi , xóa, thêm ,.. mà mảng bình thường không làm được. Được biết đến là kỹ thuật tạo ra mảng nhân tạo bằng struct 
+
+Linked list sẽ hữu dụng và được sử dụng trong các trường hợp thay đổi các phần tử trong mảng và dễ dàng thay đổi được các node để các phần tử còn lại xê dịch theo một cách nhanh chóng. 
+
+
+
+####
