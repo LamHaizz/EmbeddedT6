@@ -69,6 +69,17 @@ Bên cạnh đó các Object được khởi tạo và lưu ở phân vùng nh�
  ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/395608c8-e27f-4fd2-a7e1-d6253faad1ad)
 
 
+Ngoài ra những biến static thuộc Class thì bắt buộc khởi tạo lần đầu để cấp địa chỉ. Những Object khác nhau nhưng khi trỏ về member static thì đều trỏ về 1 địa chỉ chung. Nên khi thay đổi địa chỉ 1 Object trỏ vào static (dt.static_var) thì các địa chỉ của object khác trỏ đến static cũng sẽ thay đổi theo (dt1.static_var ,dt2.static_var).
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/311bb77b-6fde-4c17-a69e-fc7efc6e35b5)
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/86dca800-4135-45e1-8423-be588ddd75ed)
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/22673967-8489-4f64-96f7-c1831c482601)
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/993cae1f-2c4d-4cf0-9077-218255b06c32)
+
+
 
 
 
