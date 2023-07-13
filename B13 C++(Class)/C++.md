@@ -62,6 +62,12 @@ Do đó ta dùng Destructor để thu hồi vùng nhớ , được khai báo sau
 
   ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/02c9659e-35a9-4a0d-98a3-5d36ab74cf54)
 
+Bên cạnh đó các Object được khởi tạo và lưu ở phân vùng nhớ stack vì nó là biến cục bộ nên khi thoát ra khỏi test1() thì vùng nhớ của các Object được tạo (dt, dt1, dt2) sẽ bị thu hồi hết, trước khii bị thu hồi chương trình sẽ gọi Destructor ~DoiTuong sẽ được chạy và thu hồi Object từ cuối đến đầu tiên lần lượt dt2 -> dt1 -> dt và biến static id bắt đầu lại từ 100 trong hàm test2().
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/11eec37c-2d27-4aa2-b58a-283b15f614d0)
+
+ ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/395608c8-e27f-4fd2-a7e1-d6253faad1ad)
+
 
 
 
