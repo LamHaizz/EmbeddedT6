@@ -263,7 +263,7 @@ Linked list sẽ hữu dụng và được sử dụng trong các trường hợ
 
 ## C++
 
-# CLASS:
+## CLASS:
 
 Để tạo ra 1 class ta làm như sau: 
 
@@ -344,7 +344,7 @@ Ngoài ra những biến static thuộc Class thì bắt buộc khởi tạo l�
 
  ![image](https://github.com/LamHaizz/EmbeddedT6/assets/136157764/993cae1f-2c4d-4cf0-9077-218255b06c32)
 
-##OOP
+## OOP
 
 #### INHERITANCE (Tính kế thừa ): 
 
