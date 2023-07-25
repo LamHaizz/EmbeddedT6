@@ -156,7 +156,7 @@ Khi làm việc với list muốn thay đổi giá trị, thêm chèn vào mản
     list<int>::iterator it;
 
     int i = 0;
-    for (it = array.begin();it != array.end(); it++)
+    for (it = array.begin();it != array.end(); it++)        // khi muốn chèn thêm 1 node 
     {
         if(i == 1){
             array.insert(it, 27);
@@ -168,3 +168,41 @@ Khi làm việc với list muốn thay đổi giá trị, thêm chèn vào mản
     {
         cout<<*it<<endl;
     }
+
+#### LAMBDA
+
+ Là một function , một hàm cục bộ . Cấu trúc của nó như sau:
+
+[capture clause] (parameter) -> returntype
+{
+    definition of method
+}
+
+Ví dụ:
+
+     int a = 10;
+
+     auto func = [a](int b) {    // khai bao một lambda, [a] là biến cho phép sử dụng toàn cục với tham số truyền vào là b = 18
+         return a + b;
+    };
+
+    cout<<func(18)<<endl;
+
+Nếu không muốn sử dụng biến ngoài
+
+    auto func = [](int a, int b){
+        return a + b;
+    };
+
+    cout<<func(18, 2)<<endl;
+
+Nếu sử dụng nhiều biến bên ngoài ta làm như sau :
+
+    int a = 10;
+    int f = 30;
+    int k = 40;
+    
+    auto func = [=](int a, int b) -> int {       // thêm = vào trong []
+        return a + b + f + k;                    
+    };
+    
