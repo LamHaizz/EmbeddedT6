@@ -1,4 +1,4 @@
-#### Inheritance (Tính kế thừa ): 
+#### INHERITANCE (Tính kế thừa ): 
 
 trong lập trình hướng đối tượng , một class có thể kế thừa các thuộc tính của một class khác đã tồn tại trước đó.
 
@@ -27,13 +27,13 @@ Lưu ý: Khi phạm vi truy cập của các propreties của class cha là PRIV
 
 Vậy để Class con có thể truy cập và sử dụng member của class cha ta dùng PROTECTED thay cho PRIVATE , nhưng đối với OBject thì chỉ truy cập đến những member ở phạm vi truy cập PUBLIC.
 
-#### Abstraction (Tính trừu tượng): 
+#### ABSTRACTION (Tính trừu tượng): 
 
 trong lập trình hướng đối tượng là một khả năng mà chương trình có thể bỏ qua sự phức tạp bằng cách tập trung vào cốt lõi của thông tin cần xử lý.
 
 Có nghĩa là sử dụng một method ( nằm trong private hoặc protected), thông qua nó thì một method chính mới có được kết quả. giống như nâng cấp của tính đóng gói
 
-#### Polymorphism (Tính đa hình) : 
+#### POLYMORPHISM (Tính đa hình) : 
 
 là khi trong Class có những method trùng tên với nhau nhưng khác input parameter , vậy khi đó chương trình sẽ chạy method căn cứ theo input parameter mà chúng ta truyền vào kiểu dữ liệu sao cho phù hợp với input parameter của các methods cùng tên đó . Ví dụ :
 
@@ -46,7 +46,7 @@ là khi trong Class có những method trùng tên với nhau nhưng khác input
       void Tong ( int a , int b , int c){
           cout << a+ b +c<<endl;
           
-#### Encapsulation (Tính đóng gói): 
+#### ENCAPSULATION (Tính đóng gói): 
 
 trong lập trình hướng đối tượng có ý nghĩa không cho phép người sử dụng các đối tượng thay đổi trạng thái nội tại của một đối tượng, mà chỉ có phương thức nội tại của đối tượng có thể thay đổi chính nó.
 
